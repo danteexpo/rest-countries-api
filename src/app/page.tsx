@@ -1,7 +1,19 @@
+'use client';
+
+import { Navbar } from './components/Navbar';
+import { Searchbar } from './components/Searchbar';
+import { Filterbar } from './components/Filterbar';
+import { Countries } from './components/Countries';
+
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			holas
-		</main>
+		<>
+			<Navbar />
+			<main className='px-4 py-6 flex flex-col gap-6'>
+				<Searchbar />
+				<Filterbar />
+				<Countries />
+			</main>
+		</>
 	);
 }
